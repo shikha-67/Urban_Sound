@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    width: 100vw;
+    height: 100vh;
+}
+.glo{
+    height: 100px;
+    width: 200px;
+    position: relative;
+    border: none;
+    color: white;
+    background-color:rgb(22, 22, 59);
+    font-size:40px;
+    font-weight: bold;
+    border-radius: 1000px;
+    font-family: serif;
+}
+.glo:active{
+    transform: scale(1.05);
+    background-color:white;
+    z-index: 1;
+}
+.glo::after{
+    content: "";
+    height:calc(100% + 10px);
+    width: calc(100% + 20px);
+    position: absolute;
+    /* background: rgb(127, 42, 32); */
+    background: linear-gradient(to right,red,white);
+    font-size:30px;
+    font-weight: bold;
+    border-radius: 1000px;
+    border:none;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    animation:glow 3s infinite ease-in-out; 
+}
+
+@keyframes glow {
+    0%{
+        filter: blur(5px) hue-rotate(90deg);
+        transform: scale(1.01);
+    }
+     50%{
+        filter: blur(5px) hue-rotate(180deg);
+        transform: scale(1.05);
+    }
+     100%{
+        filter: blur(5px) hue-rotate(360deg);
+        transform: scale(1.01);
+    }
+}
