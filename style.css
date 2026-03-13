@@ -1,0 +1,114 @@
+.navbar{
+    height:50px ;
+    width:100%;
+    padding:10px; 
+    display:flex;
+    flex-direction: row;
+    justify-content:center ;
+    flex-wrap: wrap;
+    position: sticky;
+
+}
+nav{
+    height: 50px;
+    width: 100%;
+    padding:10px;
+    background-color:black;
+    display: flex;
+    flex-wrap: wrap;
+   position: fixed;
+   gap: 150px;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+}
+
+
+.container{
+    height:600px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content:space-evenly;
+    position: relative;
+    right:100px ;
+}
+.container_1{
+    height:600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    position: relative;
+    top: 100px;
+}
+.unorder{
+    height:600px ;
+    width: 50%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.unorder_1{
+    height:600px ;
+    width: 50%;
+    color: white;
+    background-color: rgb(62, 53, 39);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.img_1{
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    position: relative;
+    left: 50px;
+}
+.image_1{
+    height:600px;
+    width: 50%;
+    display: flex;
+ flex-direction:row;
+ background-image: black;
+ justify-content:flex-end;
+ align-items: flex-end;
+ position: relative;
+ left: 100px;
+ 
+}
+.image_2{
+    height:600px;
+    width: 50%;
+    display: flex;
+ flex-direction:row;
+ background-image: black;
+ justify-content:flex-end;
+ align-items: flex-end;
+ position: relative;
+ right: 100px;
+ 
+}
+body{
+    margin:0px;
+    padding: 0px;
+  
+}
+.Home{
+    color: white;
+    font-size: 25px;
+    display: flex;
+     margin: 2px 30px;
+font-family: sans-serif;
+text-decoration: none;
+}
+.Home:hover{
+    color:blue;
+    text-decoration: underline;
+}
